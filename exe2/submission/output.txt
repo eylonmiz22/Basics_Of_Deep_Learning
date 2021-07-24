@@ -1,0 +1,68 @@
+Hyper Paramwters:
+Max epocs=40000
+stop_Min_loss<0.2 and loss_Not_Improve_for 10 epocs Loss_Min_adv=0.0001
+
+x_train = [[0, 0], [0, 1], [1, 0], [1, 1]]
+t_train = [[0], [1], [1], [0]]
+x_val = [[0, 0], [0, 1], [1, 0], [1, 1], [1, 0.1], [1, 0.9], [0.9, 0.9], [0.1, 0.9]]
+t_val = [[0], [1], [1], [0], [1], [0], [0], [1]]
+
+
+Experiment 1: {'LR': 0.1, 'bridge': True, 'hidden': 2}
+ meanepocs: 4359.2, std/epocs% inf , Failures: 0
+ meanvalidloss: 0.04627549, stdvalidlossPercent: inf, 
+ meanTrainLoss: 0.011272371, stdTrainLossPercent: inf
+
+
+Experiment 2: {'LR': 0.01, 'bridge': True, 'hidden': 2}
+ meanepocs: 13733.7, std/epocs% 55.27731727522456 , Failures: 0
+ meanvalidloss: 0.12796561, stdvalidlossPercent: 72.88968056788362, 
+ meanTrainLoss: 0.038392033, stdTrainLossPercent: 54.59206570994982
+
+
+Experiment 3: {'bridge': False, 'LR': 0.1, 'hidden': 2}
+ meanepocs: 3468.1, std/epocs% 2.7681663251453137 , Failures: 5
+ meanvalidloss: 0.03177786, stdvalidlossPercent: 2.8219198752460954, 
+ meanTrainLoss: 0.011158861, stdTrainLossPercent: 5.406649475347967
+
+
+Experiment 4: {'hidden': 4, 'LR': 0.1, 'bridge': True}
+ meanepocs: 3244.1, std/epocs% 15.14282313747191 , Failures: 0
+ meanvalidloss: 0.030517623, stdvalidlossPercent: 19.093937039055113, 
+ meanTrainLoss: 0.0074083423, stdTrainLossPercent: 6.206614175107847
+
+
+Experiment 5: {'LR': 0.01, 'bridge': False, 'hidden': 2}
+ meanepocs: 14547.4, std/epocs% 209.99819514235278 , Failures: 10
+ meanvalidloss: 0.09206141, stdvalidlossPercent: 11.684781315017604, 
+ meanTrainLoss: 0.032138094, stdTrainLossPercent: 21.75512785168217
+
+
+Experiment 6: {'LR': 0.01, 'hidden': 4, 'bridge': True}
+ meanepocs: 11975.3, std/epocs% 13.288544065267505 , Failures: 0
+ meanvalidloss: 0.10430765, stdvalidlossPercent: 23.020475106045325, 
+ meanTrainLoss: 0.026483495, stdTrainLossPercent: 8.565334500830184
+
+
+Experiment 7: {'bridge': False, 'hidden': 4, 'LR': 0.1}
+ meanepocs: 3009.9, std/epocs% 1.4733663997955475 , Failures: 0
+ meanvalidloss: 0.028020442, stdvalidlossPercent: 1.9954180504825165, 
+ meanTrainLoss: 0.008321826, stdTrainLossPercent: 5.550722407688502
+
+
+Experiment 8: {'LR': 0.01, 'bridge': False, 'hidden': 4}
+ meanepocs: 10982.2, std/epocs% 23.49280255707474 , Failures: 0
+ meanvalidloss: 0.089141324, stdvalidlossPercent: 9.699100633103242, 
+ meanTrainLoss: 0.02914179, stdTrainLossPercent: 20.87973629434884
+
+
+Experiment 9: {'LR': 0.1, 'hidden': 1, 'bridge': True}
+ meanepocs: 5552.3, std/epocs% 5.470528027383578 , Failures: 0
+ meanvalidloss: 0.06438018, stdvalidlossPercent: 14.217539554606661, 
+ meanTrainLoss: 0.016821917, stdTrainLossPercent: 8.061193340218859
+
+
+Experiment 10: {'LR': 0.01, 'hidden': 1, 'bridge': True}
+ meanepocs: 21668.3, std/epocs% 58.97808632666675 , Failures: 0
+ meanvalidloss: 0.18621609, stdvalidlossPercent: 44.62044210128943, 
+ meanTrainLoss: 0.049776107, stdTrainLossPercent: 46.874478889733126
